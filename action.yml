@@ -60,5 +60,5 @@ runs:
 
     - name: Run Python script
       run: |
-        python ldw-deploy.py "ldw-key" "${{ inputs.tenant_id }}" "${{ inputs.app_id }}" "${{ inputs.secret_key }}" "$changed_folders"
+        python "${{ github.action_path }}/ldw-deploy.py" "ldw-key" "${{ inputs.tenant_id }}" "${{ inputs.app_id }}" "${{ inputs.secret_key }}" "$changed_folders"
       shell: bash
