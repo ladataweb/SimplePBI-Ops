@@ -60,5 +60,5 @@ jobs:
 
       # Step 5: Run the Python script with the list of changed folders and secret key
       - name: Run Python script
-        run: python ldw-deploy.py "ldw-key" ${{ secrets.TENANT_ID }} ${{ secrets.APP_ID }} ${{ secrets.SECRET_KEY }} ${{ env.changed_folders }} 
+        run: python ldw-deploy.py "ldw-key" ${{ env.TENANT_ID }} ${{ env.APP_ID }} ${{ env.SECRET_KEY }} ${{ env.changed_folders }} 
 
